@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 20,
   },
+  contentContainer: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   buttonContainer: {
     marginTop: 20,
   },
@@ -26,7 +30,9 @@ const CustomButton = (props) => (
 );
 
 const Home = ({ navigation }) => (
-  <ScrollView style={styles.container}>
+  <ScrollView 
+    style={styles.container}
+    contentContainerStyle={styles.contentContainer}>
     <CustomButton
       title={'Scroll view demo'}
       onPress={() => navigation.navigate('ScrollViewDemo')} />
