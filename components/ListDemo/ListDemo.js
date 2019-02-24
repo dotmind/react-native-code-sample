@@ -62,6 +62,7 @@ class ListDemo extends PureComponent {
           horizontal={horizontal}
           pagingEnabled={paginated}
           data={data}
+          keyExtractor={(item, index) => index.toString()}
           renderItem={this._renderItems} />
       </View>
     );
