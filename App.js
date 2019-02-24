@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
-import ScrollViewDemo from './components/ScrollViewDemo';
+import RootNavigator from './components/navigators/RootNavigator';
 
 class App extends Component {
   render() {
     return (
-      <ScrollViewDemo />
+      <RootNavigator />
     );
   }
 }

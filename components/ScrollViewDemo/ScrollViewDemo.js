@@ -16,13 +16,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ecf0f1',
   },
-  title: {
-    margin: 24,
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#34495e',
-  },
   item: {
     width: vw,
     height: vh / 4,
@@ -52,8 +45,6 @@ const items = [
   { color: getRandomColor(), img: 'https://picsum.photos/100?random' },  
 ];
 
-const MAIN_TITLE = 'React Native demo app';
-
 class ScrollViewDemo extends PureComponent {
 
   _renderItems = () => {
@@ -79,7 +70,6 @@ class ScrollViewDemo extends PureComponent {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text style={styles.title}>{MAIN_TITLE}</Text>
         {this._renderItems()}
       </ScrollView>
     );
